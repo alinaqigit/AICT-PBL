@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="contactCss/style.css">
+    <link rel="stylesheet" href="/homeCss/styel.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="fonts.css">
+    <link rel="shortcut icon" href="static/hashGroupLogoWithout text.png" type="image/x-icon">
+    <title>Contact - Hash Group</title>
+</head>
+<body>
+    <nav id="navbar">
+        <div class="navItems"  id="navLogoDiv">
+            <img id="navLogo1" class="navLogoItems" src="./static/navbar/hashGroupLogoWithout text.png" alt="">
+            <img id="navLogo2" class="navLogoItems" src="./static/navbar/hashIncText.png" alt="">
+        </div>
+        <ul id="navList" class="navItems poppins-regular">
+            <li id="navListItem1" class="navListItems"><a class="hyperLinks" href="index.html"> Home </a></li>
+            <li id="navListItem2" class="navListItems"><a class="hyperLinks" href="./About.html"> About </a></li>
+            <li id="navListItem3" class="navListItems"><a class="hyperLinks" href="services.html"> Services </a></li>
+            <li id="navListItem4" class="navListItems"><a class="hyperLinks" href="#"> Contact </a></li>
+            <li id="navListItem5" class="navListItems"><a class="hyperLinks" href="pricing.html"> Pricing </a></li>
+        </ul>
+        <div id="navSearchDiv" class="navItems" >
+            <div id="navSearch" class="navSearchItems">
+                <img id="navSearchImg" src="static//navbar/searchIcon.png" alt="">
+                <input type="text" placeholder="Search">
+            </div>
+            <div id="navSearchimgDiv" class="navSearchItems">
+                <img src="static/navbar/ProfPicIcon.png" alt="">
+            </div>
+        </div>
+    </nav>
+    <section id="form">
+        <div>
+            <h1 class="poppins-semibold" id="contactus">Contact Us</h1>
+        </div>
+        <div>
+            <p class="poppins-regular" id="contactdetails">Get in touch with us by filling <br>out the form below</p>
+        </div>
+    </section>
+        <section id="form-container">
+        <div class="poppins-regular">
+            <form action="#" method="post">
+                <label for="fullname">Full Name</label>
+                <input class="poppins-regular" type="text" required id="fullname" name="fullname" placeholder="Enter your full name"><br><br>
+                <label for="email">Email Address</label>
+                <input class="poppins-regular" type="email" required id="email" name="email" placeholder="Enter your email address"><br><br>
+                <label for="telephone">Phone no</label>
+                <input class="poppins-regular" type="tel" required id="telephone" name="telephone" placeholder="Enter your phone number"><br><br>
+                <label for="subject">Subject</label>
+                <input class="poppins-regular" type="text" required id="subject" name="subject" placeholder="Enter your subject"><br><br>
+                <label for="comments">Message</label><br>
+                <textarea class="poppins-regular" id="comments" name="comments" rows="5" cols="50"></textarea><br><br>
+                <button class="poppins-regular" type="submit">Submit</button>
+            </form>
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+            <div class="about">
+                <h2 class="poppins-medium" id="abouthashgroup">About Hash Group</h2>
+                <p class="poppins-regular" id="aboutdescription"><br>Hash Inc. - Your partner in innovation and excellence.<br>We specialize in delivering top-notch Software Development,<br>modern and responsive Web Development, and visually stunning<br>Graphics Designing solutions. At Hash Inc., we are passionate<br>about turning ideas into impactful digital realities. Whether you're<br>seeking custom software, dynamic websites, or creative designs,<br>our expert team is dedicated to exceeding expectations and driving<br>success. Let's create something extraordinary together!</p>
+            </div>
+            <div id="links-container">
+                <div class="quick-links">
+                    <h2 class="poppins-medium" id="quicklinkshead">Quick Links</h2>
+                    <ul id="quicklinkslists" class="poppins-regular">
+                        <li><a class="hyperedLinks quicklinksitem" href="/home">Home</a></li>
+                        <li><a class="hyperedLinks quicklinksitem" href="/about">About</a></li>
+                        <li><a class="hyperedLinks quicklinksitem" href="/services">Services</a></li>
+                        <li><a class="hyperedLinks quicklinksitem" href="contact">Contact</a></li>
+                        <li><a class="hyperedLinks quicklinksitem" href="/pricing">Pricing</a></li>
+                    </ul>
+                </div>
+        
+                <div class="contact">
+                    <h2 class="poppins-medium" id="contactinfo">Contact Information</h2><br>
+                    <h3 class="poppins-medium">Email</h3>
+                    <a href="mailto:youremail@example.com" class="poppins-regular hyperedLinks">hashinc@email.com</a>
+                    <h3 class="poppins-medium">Contact</h3>
+                    <p class="poppins-regular">+123-456-789</p>
+                </div>
+            </div>
+        </div>
+        <div class="copyright poppins-regular">
+            <p>Copyright &copy; 2024 Hash Inc. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>

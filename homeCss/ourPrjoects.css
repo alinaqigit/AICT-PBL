@@ -1,0 +1,167 @@
+
+#ourProjects #title{
+    text-align: center;
+    font-size: 40px;
+    color: #2B91A7;
+
+    margin: 40px 5px 25px 5px;
+}
+
+#ourProjects #projectsCardsSection{
+    margin-left: 40px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+#ourProjects #projectsCardsSection .projectsCard {
+    background: #ffffff;
+    height: 360px;
+    width: 300px;
+    padding: 20px;
+    padding-bottom: 15px;
+    text-align: left;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background: none;
+    position: relative;
+    z-index: 1;
+    transition: box-shadow .2s ease-in-out 0s;
+    border-radius: 44px;
+}
+
+#ourProjects #projectsCardsSection .projectsCard:hover {
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.1);
+    
+}
+
+#ourProjects #projectsCardsSection .projectsCard .projectsCardText .projectsCardTitle {
+    padding: 20px 20px 0px 20px;
+    font-size: 21px;
+    margin: 0;
+    color: white;
+}
+
+#ourProjects #projectsCardsSection .projectsCard .projectsCardText .projectsCardSubtitle {
+    color: white;
+    margin: 10px 0;
+    font-size: 16px;
+    padding: 0px 20px;
+}
+
+#ourProjects #projectsCardsSection #projectsCard1::before {
+    content: "";
+    position: absolute;
+    top: 0; 
+    left: 0;
+    width: 100%; 
+    height: 100%;  
+    border-radius: 44px;
+    z-index: -1;
+    background-image: url('../static/projects/2109962.jpg');
+    background-size: 700px;
+    background-position: 64% 0% ;
+    background-color: #F2F2F2;
+    background-repeat: no-repeat;
+
+    /* flip */
+    -moz-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    filter: FlipH;
+    -ms-filter: "FlipH";
+}
+
+#ourProjects #projectsCardsSection #projectsCard1 .projectsCardText p{
+    width: 75%;
+    color: white;
+}
+
+#ourProjects #projectsCardsSection #projectsCard2::before{
+    content: "";
+    position: absolute;
+    border-radius: 44px;
+    top: 0; 
+    left: 0;
+    width: 100%; 
+    height: 100%;  
+    z-index: -1;
+    background-color: #F2F2F2;
+    background-repeat: no-repeat;
+    background-image: url('../static/projects/Software\ Dev\ Vector\ Illustration\ 58903.jpeg.jpg');
+    background-size: 680px;
+    background-position: 46% 0%;
+}
+
+#ourProjects #projectsCardsSection #projectsCard2 .projectsCardText p{
+    color: white;
+    width: 98%;
+}
+#ourProjects #projectsCardsSection #projectsCard3::before{
+    content: "";
+    position: absolute;
+    top: 0; 
+    left: 0;
+    width: 100%; 
+    height: 100%;  
+    border-radius: 44px;
+    z-index: -1;
+    background-color: #F2F2F2;
+    background-repeat: no-repeat;
+    background-image: url('../static/projects/Digital\ Drawing\ Tablet.jpeg.jpg');
+    background-size: 764px;
+    background-position: 42% 19%;
+}
+
+#ourProjects #projectsCardsSection #projectsCard3 .projectsCardText p{
+    color: white;
+}
+
+
+#ourProjects #projectsCardsSection .projectsCard .projectsCardImageContainer, .CardImageContainer{
+    width: 100%;
+    display: flex;
+    justify-content: right;
+}
+
+#ourProjects #projectsCardsSection .projectsCard .projectsCardImageContainer div, .CardImageContainer div{
+    position: relative;
+    z-index: 10;
+}
+
+#ourProjects #projectsCardsSection .projectsCard .projectsCardImageContainer div::before , .CardImageContainer div::before{
+    color: white;
+    content: "Read More";
+    position: absolute;
+    top: 0; 
+    right: 0px;
+    font-size: 19px;
+    width: 40%; 
+    height: 30px;  
+    z-index: 11;
+    border-radius: 50px;
+    cursor: pointer;
+    overflow: hidden;
+    background-color: #2B91A7;
+    text-align: left;
+    padding: 0px 8px;
+    transition: width .7s ease-in-out 0s, content .7s ease-in-out 1s, background-color .2s ease-in-out 0s;
+}
+
+#ourProjects #projectsCardsSection .projectsCard .projectsCardImageContainer div:hover::before , .CardImageContainer div:hover::before{
+    content: "Read More";
+    width: 415%;
+}
+
+
+#ourProjects #projectsCardsSection .projectsCard .projectsCardImageContainer div .plus-icon , .CardImageContainer div .plus-icon{
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    position: relative;
+    z-index: 12;
+}

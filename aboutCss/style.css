@@ -1,0 +1,152 @@
+#abouttitle{
+    display: flex;
+    flex-direction: row;
+    justify-content:center ;
+    align-items: center;
+    text-align: center;
+    padding: 30px 10px 0px 10px;
+    margin: 30px 10px 0px 10px;
+}
+#abouttitle .title{
+    font-size: 70px;
+    color: #2B91A7;
+    margin: 0px 5px 15px 5px;
+}
+#hashimg{
+    margin: 5px 10px 5px 10px;
+    width: 90px;
+    height: auto;
+    margin-top: -15px;
+    
+}
+#aboutus{
+    font-size: 28px;
+    color: #2B91A7;
+    margin: 10px 5px 15px 35px;
+
+}
+#aboutarticle{
+    font-size: 20px;
+    margin-left: 35px;
+}
+.aboutdiv {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 50px;
+}
+#hashIncHQ{
+    width: 600px;
+    border-radius: 30px;
+    margin-right: 35px;
+}
+#hashIncHQText{
+    text-align: right;
+    margin-right: 135px;
+    font-size: 20px;
+}
+#timelineheading{
+    font-size: 28px;
+    color: #2B91A7;
+    margin: 60px 5px 15px 35px;
+
+}
+.timelineAssets{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 30px;
+}
+
+#leadershipheading{
+    font-size: 28px;
+    color: #2B91A7;
+    margin: 60px 5px 15px 35px;
+
+}
+.leadership-card-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.leadership-card {
+    position: relative;
+    width: 350px;
+    height: 400px;
+    border-radius: 30px;
+    overflow: hidden;
+    margin-top: 50px;
+    margin-left:10px;
+    margin-right: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.leadership-card:hover {
+    transform: scale(1.1); /* Scale the card to 110% */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3); /* Add shadow effect */
+}
+.leadership-card img {
+    width: 500px; 
+    height: 400px;
+    object-fit: cover;
+    object-position: center top;
+    transition: transform 0.3s ease; 
+}
+#hasnainAli{
+    width: 370px;
+    height: 400px;
+}
+#aliNaqish{
+    width: 350px;
+    height: 450px;
+}
+#saifIqbal{
+    width: 350px;
+    height: 500px;
+}
+#hassanNaseer{
+    width: 300px;
+    width:350px;
+}
+.leadership-card:hover img {
+    transform: scale(1.2); /* Zoom in the image slightly */
+}
+.text-overlay {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    color: white; 
+}
+.text-overlay p {
+    font-size: 1rem;
+    margin: 0;
+    opacity: 0.9;
+}
+
+.text-overlay .name {
+    font-size: 1.6rem;
+
+}
+
+.text-overlay .role {
+    font-size: 1.2rem;
+
+}
+#hasharticle1{
+    font-size: 30px;
+    text-align: center;
+    margin: 20px;
+}
+#leadership-info{
+    font-size: 20px;
+    margin: 35px;
+}
+
+
+
+.about{
+    width: 43%; /* Adjust for equal width */
+    padding: 0 20px;
+}
+
+
+

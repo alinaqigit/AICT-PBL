@@ -1,0 +1,374 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+.hyperLinks{
+    color: black;
+    text-decoration: none;
+}
+
+input:focus{
+    outline: none;
+}
+
+#navbar{
+    position: sticky;
+    top: 0px;
+    z-index: 20;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #F2F2F2;
+    padding: 13px 0px;
+    width: 100%;
+    border:1.5px solid  rgba(0, 0, 0, .2);
+}
+
+#navbar #navLogoDiv{
+    display: flex;
+    align-items: center;
+    width: 10%;
+    padding: 0px 8px;
+}
+
+#navbar #navLogoDiv .navLogoItems{
+    margin: 0px 0px 0px 12px;
+}
+
+#navbar #navLogoDiv #navLogo1{
+    height: 23px;
+}
+#navbar #navLogoDiv #navLogo2{
+    height: 15px;
+
+}
+#navbar #navList{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    width: 65%;
+}
+
+#navbar #navList .navListItems{
+    list-style: none;
+    margin: 0px 5px;
+}
+
+#navbar #navList a{
+    list-style: none;
+    padding: 5px 8px;
+}
+
+#navbar #navSearchDiv{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 25%;
+}
+
+#navbar #navSearchDiv #navSearch{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: white;
+    padding: 6px 5px;
+    border-radius: 19px;
+}
+
+#navbar #navSearchDiv input{
+    border: none;
+    outline: none;
+    padding: 0px 10px;
+}
+
+
+#navbar #navSearchDiv #navSearchImg{
+    padding: 0px 10px;
+    height: 20px;
+    border-right: 1px solid #2B91A7;
+}
+
+
+/* hero section */
+#hero{
+    display: flex;
+    justify-content:center ;
+    align-items: center;
+    padding: 30px 10px 0px 10px;
+    margin: 30px 10px 0px 10px;
+}
+
+#hero .heroDivs{
+    margin: 0px 50px;
+}
+
+#hero #heroDiv1 {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 50%;
+
+}
+
+#hero #heroDiv1 .heroDiv1Childeren{
+    margin: 10px 0px;
+}
+
+#hero #heroDiv1 #heroLogo {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+#hero #heroDiv1 #heroLogo p{
+    font-size: 70px;
+    color: #2B91A7;
+}
+#hero #heroDiv1 #heroLogo img{
+    height: 100px;
+}
+
+#hero #heroDiv1 #heroArticle{
+    font-size: 28px;
+}
+
+#hero #heroDiv1 button{
+    padding: 14px 30px;
+    border-radius: 35px;
+    font-size: 23px;
+    color: white;
+    background-color: #2B91A7;
+    border: none;
+    transition: background-color .13s, box-shadow .13s;
+}
+
+#hero #heroDiv1 button:hover{
+    background-color: #35a7c1;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#hero #heroDiv1 button:active{
+    background-color: #13829b;
+}
+
+#hero #heroDiv2{
+    max-width: 40%;
+}
+#hero #heroDiv2 img{
+    height: 350px;
+}
+
+#servicesSection #offer{
+    text-align: center;
+    font-size: 40px;
+    color: #2B91A7;
+
+    margin: 40px 5px 25px 5px;
+}
+
+#servicesSection #servicesCardsSection{
+    margin-left: 40px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+#servicesSection #servicesCardsSection .servicesCard {
+    background: #ffffff;
+    height: 320px;
+    width: 300px;
+    padding: 20px;
+    padding-bottom: 15px;
+    text-align: left;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background: none;
+    position: relative;
+    z-index: 1;
+    transition: box-shadow .2s ease-in-out 0s;
+    border-radius: 44px;
+}
+
+#servicesSection #servicesCardsSection .servicesCard:hover {
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.1);
+    
+}
+
+#servicesSection #servicesCardsSection #servicesCard1::before {
+    content: "";
+    position: absolute;
+    top: 0; 
+    left: 0;
+    width: 100%; 
+    height: 100%;  
+    opacity: .8; 
+    border-radius: 44px;
+    z-index: -1;
+    background-image: url('../static/webDevVectorGraphicsTransparent34.png');
+    background-size: 400px;
+    background-position: 133% -538%;
+    background-color: #F2F2F2;
+    background-repeat: no-repeat;
+}
+
+#servicesSection #servicesCardsSection #servicesCard1 .servicesCardText p{
+    width: 70%;
+    color: black;
+}
+
+#servicesSection #servicesCardsSection #servicesCard2::before{
+    content: "";
+    position: absolute;
+    border-radius: 44px;
+    top: 0; 
+    left: 0;
+    width: 100%; 
+    height: 100%;  
+    opacity: .8; 
+    z-index: -1;
+    background-color: #F2F2F2;
+    background-repeat: no-repeat;
+    background-image: url('../static/Software\ Dev\ Vector\ Illustration\ 34.jpg');
+    background-size: 600px;
+}
+
+#servicesSection #servicesCardsSection #servicesCard2 .servicesCardText p{
+    color: white;
+    width: 95%;
+}
+#servicesSection #servicesCardsSection #servicesCard3::before{
+    content: "";
+    position: absolute;
+    top: 0; 
+    left: 0;
+    width: 100%; 
+    height: 100%;  
+    border-radius: 44px;
+    opacity: .8; 
+    z-index: -1;
+    background-color: #F2F2F2;
+    background-repeat: no-repeat;
+    background-image: url('../static/Graphic\ Designing\ Vector\ Illustration.png');
+    background-size: 364px;
+    background-position: 196% -1254%;
+}
+
+#servicesSection #servicesCardsSection #servicesCard3 .servicesCardText p{
+    color: black;
+}
+
+#servicesSection #servicesCardsSection .servicesCard .servicesCardText .serviceCardTitle {
+    font-size: 18px;
+    
+    margin: 0;
+    color: #333;
+}
+
+#servicesSection #servicesCardsSection .servicesCard .servicesCardText .serviceCardSubtitle {
+    font-size: 20px;
+    color: #555;
+    margin: 10px 0;
+}
+
+#servicesSection #servicesCardsSection .servicesCard .serviceCardImageContainer, .CardImageContainer{
+    width: 100%;
+    display: flex;
+    justify-content: right;
+}
+
+#servicesSection #servicesCardsSection .servicesCard .serviceCardImageContainer div, .CardImageContainer div{
+    position: relative;
+    z-index: 10;
+}
+
+#servicesSection #servicesCardsSection .servicesCard .serviceCardImageContainer div::before , .CardImageContainer div::before{
+    color: white;
+    content: "Read More";
+    position: absolute;
+    top: 0; 
+    right: 0px;
+    font-size: 19px;
+    width: 40%; 
+    height: 30px;  
+    z-index: 11;
+    border-radius: 50px;
+    cursor: pointer;
+    overflow: hidden;
+    background-color: #2B91A7;
+    text-align: left;
+    padding: 0px 8px;
+    transition: width .3s ease-in-out 0s, content .7s ease-in-out 1s, background-color .2s ease-in-out 0s;
+}
+
+#servicesSection #servicesCardsSection .servicesCard .serviceCardImageContainer div:hover::before , .CardImageContainer div:hover::before{
+    content: "Read More";
+    width: 415%;
+}
+
+
+#servicesSection #servicesCardsSection .servicesCard .serviceCardImageContainer div .plus-icon , .CardImageContainer div .plus-icon{
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    position: relative;
+    z-index: 12;
+}
+
+/* footer */
+
+footer {
+    color: #808080;
+    background-color: #f2f2f2;
+    padding: 20px 0;
+
+}
+
+.container {
+    overflow: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.about{
+    width: 43%; /* Adjust for equal width */
+    padding: 0 20px;
+}
+
+#links-container{
+    width: 400px;
+}
+
+.quick-links{
+    width: 37%;
+}
+
+
+.quick-links ul {
+    list-style: none; 
+}
+
+.quick-links ul li {
+    margin-top: 10px;
+    margin-bottom: 5px; 
+}
+
+.contact{
+    float: left;
+}
+
+.hyperedLinks{
+    text-decoration: none;
+    color: #808080;
+}
+
+.copyright{
+    margin: 5px 5px;
+    text-align: center;
+}

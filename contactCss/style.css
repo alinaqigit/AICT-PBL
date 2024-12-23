@@ -1,0 +1,71 @@
+/* Contact Page CSS*/
+#form{
+    display: flex;
+    flex-direction: column;
+    justify-content:center ;
+    align-items: center;
+    text-align: center;
+    padding: 30px 10px 0px 10px;
+    margin: 30px 10px 0px 10px;
+}
+#form #contactus{
+    font-size: 60px;
+    color: #2B91A7;
+    margin: 0px 5px 15px 5px;
+}
+#form #contactdetails{
+    font-size: 25px;
+}
+form {
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 20px;
+
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    textarea {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 15px;
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        box-sizing: border-box;
+        font-size: 16px;
+    }
+
+    input:focus,
+    textarea:focus {
+        border-color: #2B91A7;
+        outline: none;
+        box-shadow: 0 0 5px rgba(43, 145, 167, 0.5);
+    }
+    button,
+    input[type="submit"] {
+        display: inline-block;
+        background-color: rgb(43, 145, 167);
+        color: white;
+        padding: 10px 15px;
+        border: none;
+        border-radius: 8px;
+        font-size: 16px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+    button:hover,
+    input[type="submit"]:hover {
+        background-color: #32a2bb;
+    }
+}
+#form-container{
+    background-color: #F2F2F2;
+    border-radius: 30px ;
+    width: 600px;
+    padding: 6px;
+    margin: 40px auto;
+}
+
+.hyperedLinks{
+    text-decoration: none;
+    color: #808080;
+}
