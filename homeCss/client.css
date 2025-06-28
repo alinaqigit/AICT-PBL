@@ -62,7 +62,7 @@
     height: 100%;  
     border-radius: 44px;
     z-index: -1;
-    background-image: url('../static/client/ai-generated-7957452.png');
+    background-image: url('../static/Client/ai-generated-7957452.png');
     background-size: 320px;
     /* background-position: 64% 0% ; */
     background-color: #F2F2F2;
@@ -91,7 +91,7 @@
     z-index: -1;
     background-color: #F2F2F2;
     background-repeat: no-repeat;
-    background-image: url('../static/client/business-1042706.jpg');
+    background-image: url('../static/Client/business-1042706.jpg');
     background-size: 350px;
     background-blend-mode: multiply;
     background-position: 46% 0%;
@@ -112,7 +112,7 @@
     z-index: -1;
     background-color: rgb(139, 139, 139);
     background-repeat: no-repeat;
-    background-image: url('../static/client/man-5928801.jpg');
+    background-image: url('../static/Client/man-5928801.jpg');
     background-size: 364px;
     background-blend-mode: multiply;
 }
