@@ -1,217 +1,401 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./homeCss/style.css">
-    <link rel="stylesheet" href="./homeCss/whyChooseUs.css">
-    <link rel="stylesheet" href="./homeCss/ourProjects.css">
-    <link rel="stylesheet" href="./homeCss/client.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./fonts.css">
-    <link rel="shortcut icon" href="./static/hashGroupLogoWithout text.png" type="image/x-icon">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./homeCss/style.css" />
+    <link rel="stylesheet" href="./homeCss/whyChooseUs.css" />
+    <link rel="stylesheet" href="./homeCss/ourProjects.css" />
+    <link rel="stylesheet" href="./homeCss/client.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./fonts.css" />
+    <link
+      rel="shortcut icon"
+      href="./static/hashGroupLogoWithout text.png"
+      type="image/x-icon"
+    />
     <title>Hash Inc.</title>
-</head>
-<body>
+  </head>
+  <body>
+    <ul id="HamburgerNavList" class="navItems poppins-regular">
+      <div id="closeButton">X</div>
+      <li id="navLogo" class="navListItems">
+        <img
+          class="navLogo"
+          src="./static/navbar/hashGroupLogoWithout text.png"
+          alt=""
+        />
+        <img
+          class="navLogo"
+          src="./static/navbar/hashIncText.png"
+          alt=""
+        />
+      </li>
+      <li id="navListItem1" class="navListItems">
+        <a class="hyperLinks" href="#"> Home </a>
+      </li>
+      <li id="navListItem2" class="navListItems">
+        <a class="hyperLinks" href="./About.html"> About </a>
+      </li>
+      <li id="navListItem3" class="navListItems">
+        <a class="hyperLinks" href="./services.html"> Services </a>
+      </li>
+      <li id="navListItem4" class="navListItems">
+        <a class="hyperLinks" href="./contact.html"> Contact </a>
+      </li>
+      <li id="navListItem5" class="navListItems">
+        <a class="hyperLinks" href="./pricing.html"> Pricing </a>
+      </li>
+    </ul>
     <nav id="navbar">
-        <a href="./index.html" class="navItems"  id="navLogoDiv">
-            <img id="navLogo1" class="navLogoItems" src="./static/navbar/hashGroupLogoWithout text.png" alt="">
-            <img id="navLogo2" class="navLogoItems" src="./static/navbar/hashIncText.png" alt="">
-        </a>
-        <ul id="navList" class="navItems poppins-regular">
-            <li id="navListItem1" class="navListItems"><a class="hyperLinks" href="#"> Home </a></li>
-            <li id="navListItem2" class="navListItems"><a class="hyperLinks" href="./About.html"> About </a></li>
-            <li id="navListItem3" class="navListItems"><a class="hyperLinks" href="./services.html"> Services </a></li>
-            <li id="navListItem4" class="navListItems"><a class="hyperLinks" href="./contact.html"> Contact </a></li>
-            <li id="navListItem5" class="navListItems"><a class="hyperLinks" href="./pricing.html"> Pricing </a></li>
-        </ul>
-        <div id="navSearchDiv" class="navItems" >
-            <div id="navSearch" class="navSearchItems">
-                <img id="navSearchImg" src="./static//navbar/searchIcon.png" alt="">
-                <input type="text" placeholder="Search">
-            </div>
-            <div id="navSearchimgDiv" class="navSearchItems">
-                <img src="./static/navbar/ProfPicIcon.png" alt="">
-            </div>
+      <div id="Hamburger">
+        <div class="Hamburger-Stripes"></div>
+        <div class="Hamburger-Stripes"></div>
+        <div class="Hamburger-Stripes"></div>
+      </div>
+      <a href="./index.html" class="navItems" id="navLogoDiv">
+        <img
+          id="navLogo1"
+          class="navLogoItems"
+          src="./static/navbar/hashGroupLogoWithout text.png"
+          alt=""
+        />
+        <img
+          id="navLogo2"
+          class="navLogoItems"
+          src="./static/navbar/hashIncText.png"
+          alt=""
+        />
+      </a>
+      <ul id="navList" class="navItems poppins-regular">
+        <li id="navListItem1" class="navListItems">
+          <a class="hyperLinks" href="#"> Home </a>
+        </li>
+        <li id="navListItem2" class="navListItems">
+          <a class="hyperLinks" href="./About.html"> About </a>
+        </li>
+        <li id="navListItem3" class="navListItems">
+          <a class="hyperLinks" href="./services.html"> Services </a>
+        </li>
+        <li id="navListItem4" class="navListItems">
+          <a class="hyperLinks" href="./contact.html"> Contact </a>
+        </li>
+        <li id="navListItem5" class="navListItems">
+          <a class="hyperLinks" href="./pricing.html"> Pricing </a>
+        </li>
+      </ul>
+      <div id="navSearchDiv" class="navItems">
+        <div id="navSearch" class="navSearchItems">
+          <img id="navSearchImg" src="./static//navbar/searchIcon.png" alt="" />
+          <input type="text" placeholder="Search" />
         </div>
+        <div id="navSearchimgDiv" class="navSearchItems">
+          <img src="./static/navbar/ProfPicIcon.png" alt="" />
+        </div>
+      </div>
     </nav>
     <section id="hero">
-        <div id="heroDiv1" class="heroDivs" >
-            <div id="heroLogo" class="heroDiv1Childeren">
-                <img src="./static/hero/hashGroupLogoWithout text.png" alt="">
-                <p class="poppins-medium">Group!</p>
-            </div><a href=""></a>
-            <div id="heroArticle" class="heroDiv1Childeren">
-                <article class="poppins-regular ">Leading experts in web development, software development, software creation and grapyics designing. We'r not just developers; we'r digital architechts</article>
-            </div>
-            <button id="heroSectionButton" class="poppins-regular heroDiv1Childeren">Get Started</button>
+      <div id="heroDiv1" class="heroDivs">
+        <div id="heroLogo" class="heroDiv1Childeren">
+          <img src="./static/hero/hashGroupLogoWithout text.png" alt="" />
+          <p class="poppins-medium">Group!</p>
         </div>
-        <div id="heroDiv2" class="heroDivs" >
-            <img src="./static/hero/SoftwareDevVectorIllustrationTransparent.png" alt="">
+        <a href=""></a>
+        <div id="heroArticle" class="heroDiv1Childeren">
+          <article class="poppins-regular">
+            Leading experts in web development, software development, software
+            creation and grapyics designing. We'r not just developers; we'r
+            digital architechts
+          </article>
         </div>
+        <button
+          id="heroSectionButton"
+          class="poppins-regular heroDiv1Childeren"
+        >
+          Get Started
+        </button>
+      </div>
+      <div id="heroDiv2" class="heroDivs">
+        <img
+          src="./static/hero/SoftwareDevVectorIllustrationTransparent.png"
+          alt=""
+        />
+      </div>
     </section>
     <section id="servicesSection">
-        <article id="offer" class="poppins-semibold">What we offer</article>
-        <div id="servicesCardsSection">
-            <div id="servicesCard1" class="servicesCard">
-                <div class="servicesCardText">
-                    <p class="serviceCardTitle poppins-semibold">Web Development</p>
-                    <p class="serviceCardSubtitle poppins-semibold">Innovative Designs, Smooth Flows</p>
-                </div>
-                <div class="serviceCardImageContainer">
-                    <div class="poppins-regular"><img class="plus-icon" src="./static/services/Expand-PlusIcon.png"></div>
-                </div>
+      <article id="offer" class="poppins-semibold">What we offer</article>
+      <div id="servicesCardsSection" class="cards-container">
+        <div id="servicesCard1" class="servicesCard">
+          <div class="servicesCardText">
+            <p class="serviceCardTitle poppins-semibold">Web Development</p>
+            <p class="serviceCardSubtitle poppins-semibold">
+              Innovative Designs, Smooth Flows
+            </p>
+          </div>
+          <div class="serviceCardImageContainer">
+            <div class="poppins-regular">
+              <img
+                class="plus-icon"
+                src="./static/services/Expand-PlusIcon.png"
+              />
             </div>
-            <div id="servicesCard2" class="servicesCard">
-                <div class="servicesCardText">
-                    <p class="serviceCardTitle poppins-semibold">Software Creation</p>
-                    <p class="serviceCardSubtitle poppins-semibold">Propose. Develop. Deploy. It's that easy</p>
-                </div>
-                <div class="serviceCardImageContainer">
-                    <div class="poppins-regular"><img class="plus-icon" src="./static/services/Expand-PlusIcon.png"></div>
-                </div>
-            </div>
-            <div id="servicesCard3" class="servicesCard">
-                <div class="servicesCardText">
-                    <p class="serviceCardTitle poppins-semibold">Graphics Designing</p>
-                    <p class="serviceCardSubtitle poppins-semibold">Innovative Designs, Smooth Flows</p>
-                </div>
-                <div class="serviceCardImageContainer">
-                    <div class="poppins-regular"><img class="plus-icon" src="./static/services/Expand-PlusIcon.png"></div>
-                </div>
-            </div>
+          </div>
         </div>
+        <div id="servicesCard2" class="servicesCard">
+          <div class="servicesCardText">
+            <p class="serviceCardTitle poppins-semibold">Software Creation</p>
+            <p class="serviceCardSubtitle poppins-semibold">
+              Propose. Develop. Deploy. It's that easy
+            </p>
+          </div>
+          <div class="serviceCardImageContainer">
+            <div class="poppins-regular">
+              <img
+                class="plus-icon"
+                src="./static/services/Expand-PlusIcon.png"
+              />
+            </div>
+          </div>
+        </div>
+        <div id="servicesCard3" class="servicesCard">
+          <div class="servicesCardText">
+            <p class="serviceCardTitle poppins-semibold">Graphics Designing</p>
+            <p class="serviceCardSubtitle poppins-semibold">
+              Innovative Designs, Smooth Flows
+            </p>
+          </div>
+          <div class="serviceCardImageContainer">
+            <div class="poppins-regular">
+              <img
+                class="plus-icon"
+                src="./static/services/Expand-PlusIcon.png"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- //Why Choose us -->
 
     <section id="why-choose-us">
-        <h1 class="poppins-semibold">Why choose us?</h1>
-        <div class="cards-container">
-          <div id="card1" class="card">
-            <img class="cardIcon" src="./static/whyChooseUs/clockOnFireIcon.png" alt="Timely Delivery Icon">
-            <h2 class="poppins-semibold">Timely Delivery</h2>
-            <p class="poppins-medium">We ensure speedy delivery, so that you can have all the peace.</p>
-            <div class="CardImageContainer">
-                <div class="poppins-regular"><img class="plus-icon" src="./static/whyChooseUs/Expand-PlusIcon.png"></div>
+      <h1 class="poppins-semibold">Why choose us?</h1>
+      <div class="cards-container">
+        <div id="card1" class="card">
+          <img
+            class="cardIcon"
+            src="./static/whyChooseUs/clockOnFireIcon.png"
+            alt="Timely Delivery Icon"
+          />
+          <h2 class="poppins-semibold">Timely Delivery</h2>
+          <p class="poppins-medium">
+            We ensure speedy delivery, so that you can have all the peace.
+          </p>
+          <div class="CardImageContainer">
+            <div class="poppins-regular">
+              <img
+                class="plus-icon"
+                src="./static/whyChooseUs/Expand-PlusIcon.png"
+              />
             </div>
           </div>
-          <div id="card2" class="card">
-            <img class="cardIcon" src="./static/whyChooseUs/magicIcon.png" alt="Quality of Work Icon">
-            <h2 class="poppins-semibold">Quality of Work</h2>
-            <p class="poppins-medium">For us, quality never comes second. Which reflects in our work.</p>
-            <div class="CardImageContainer">
-                <div class="poppins-regular"><img class="plus-icon" src="./static/whyChooseUs/Expand-PlusIcon.png"></div>
+        </div>
+        <div id="card2" class="card">
+          <img
+            class="cardIcon"
+            src="./static/whyChooseUs/magicIcon.png"
+            alt="Quality of Work Icon"
+          />
+          <h2 class="poppins-semibold">Quality of Work</h2>
+          <p class="poppins-medium">
+            For us, quality never comes second. Which reflects in our work.
+          </p>
+          <div class="CardImageContainer">
+            <div class="poppins-regular">
+              <img
+                class="plus-icon"
+                src="./static/whyChooseUs/Expand-PlusIcon.png"
+              />
             </div>
           </div>
-          <div id="card3" class="card">
-            <img class="cardIcon" src="./static/whyChooseUs/laptopIcon.png" alt="Experts at Work Icon">
-            <h2 class="poppins-semibold">Experts at Work</h2>
-            <p class="poppins-medium">We are the best at what we do. Our expertise drive the work.</p>
-            <div class="CardImageContainer">
-                <div class="poppins-regular"><img class="plus-icon" src="./static/whyChooseUs/Expand-PlusIcon.png"></div>
-            </div>
         </div>
+        <div id="card3" class="card">
+          <img
+            class="cardIcon"
+            src="./static/whyChooseUs/laptopIcon.png"
+            alt="Experts at Work Icon"
+          />
+          <h2 class="poppins-semibold">Experts at Work</h2>
+          <p class="poppins-medium">
+            We are the best at what we do. Our expertise drive the work.
+          </p>
+          <div class="CardImageContainer">
+            <div class="poppins-regular">
+              <img
+                class="plus-icon"
+                src="./static/whyChooseUs/Expand-PlusIcon.png"
+              />
+            </div>
+          </div>
         </div>
-      </section>
-
-      <!-- //Our Projects -->
-
-      <section id="ourProjects">
-        <article id="title" class="poppins-semibold">Our Projects</article>
-        <div id="projectsCardsSection">
-            <div id="projectsCard1" class="projectsCard">
-                <div class="projectsCardText">
-                    <p class="projectsCardTitle poppins-semibold">Web Development</p>
-                    <p class="projectsCardSubtitle poppins-medium">We designed a responsive website with a modern design for our setup.</p>
-                </div>
-                <div class="projectsCardImageContainer">
-                    <div class="poppins-regular"><img class="plus-icon" src="./static/rightArrow.png"></div>
-                </div>
-            </div>
-            <div id="projectsCard2" class="projectsCard">
-                <div class="projectsCardText">
-                    <p class="projectsCardTitle poppins-semibold">Software Development</p>
-                    <p class="projectsCardSubtitle poppins-medium">We have developed and deployed industry-standard softwares, which we keep updating.</p>
-                </div>
-                <div class="projectsCardImageContainer">
-                    <div class="poppins-regular"><img class="plus-icon" src="./static/rightArrow.png"></div>
-                </div>
-            </div>
-            <div id="projectsCard3" class="projectsCard">
-                <div class="projectsCardText">
-                    <p class="projectsCardTitle poppins-semibold">Graphics Designing</p>
-                    <p class="projectsCardSubtitle poppins-medium">We designed a logo for a multi-million dollar company which helped them flourished.</p>
-                </div>
-                <div class="projectsCardImageContainer">
-                    <div class="poppins-regular"><img class="plus-icon" src="./static/rightArrow.png"></div>
-                </div>
-            </div>
-        </div>
+      </div>
     </section>
 
+    <!-- //Our Projects -->
+
+    <section id="ourProjects">
+      <article id="title" class="poppins-semibold">Our Projects</article>
+      <div id="projectsCardsSection" class="cards-container">
+        <div id="projectsCard1" class="projectsCard">
+          <div class="projectsCardText">
+            <p class="projectsCardTitle poppins-semibold">Web Development</p>
+            <p class="projectsCardSubtitle poppins-medium">
+              We designed a responsive website with a modern design for our
+              setup.
+            </p>
+          </div>
+          <div class="projectsCardImageContainer">
+            <div class="poppins-regular">
+              <img class="plus-icon" src="./static/rightArrow.png" />
+            </div>
+          </div>
+        </div>
+        <div id="projectsCard2" class="projectsCard">
+          <div class="projectsCardText">
+            <p class="projectsCardTitle poppins-semibold">
+              Software Development
+            </p>
+            <p class="projectsCardSubtitle poppins-medium">
+              We have developed and deployed industry-standard softwares, which
+              we keep updating.
+            </p>
+          </div>
+          <div class="projectsCardImageContainer">
+            <div class="poppins-regular">
+              <img class="plus-icon" src="./static/rightArrow.png" />
+            </div>
+          </div>
+        </div>
+        <div id="projectsCard3" class="projectsCard">
+          <div class="projectsCardText">
+            <p class="projectsCardTitle poppins-semibold">Graphics Designing</p>
+            <p class="projectsCardSubtitle poppins-medium">
+              We designed a logo for a multi-million dollar company which helped
+              them flourished.
+            </p>
+          </div>
+          <div class="projectsCardImageContainer">
+            <div class="poppins-regular">
+              <img class="plus-icon" src="./static/rightArrow.png" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <!-- Clients -->
 
     <section id="client">
-        <article id="title" class="poppins-semibold">Our client</article>
-        <div id="clientCardsSection">
-            <div id="clientCard1" class="clientCard">
-                <div class="clientCardText">
-                    <p class="clientCardTitle poppins-semibold">"Simply Amazing!"</p>
-                    <p class="clientCardSubtitle poppins-medium">The simplest experience I've ever had!</p>
-                </div>
-            </div>
-            <div id="clientCard2" class="clientCard">
-                <div class="clientCardText">
-                    <p class="clientCardTitle poppins-semibold">"Cooperative Team"</p>
-                    <p class="clientCardSubtitle poppins-medium">The Hash Group Team works to resolve all your issues till the end.</p>
-                </div>
-            </div>
-            <div id="clientCard3" class="clientCard">
-                <div class="clientCardText">
-                    <p class="clientCardTitle poppins-semibold">"Amazing Timeliness!"</p>
-                    <p class="clientCardSubtitle poppins-medium">Their time of delivery is amazing! Extremely Impressed</p>
-                </div>
-            </div>
+      <article id="title" class="poppins-semibold">Our client</article>
+      <div id="clientCardsSection" class="cards-container ">
+        <div id="clientCard1" class="clientCard">
+          <div class="clientCardText">
+            <p class="clientCardTitle poppins-semibold">"Simply Amazing!"</p>
+            <p class="clientCardSubtitle poppins-medium">
+              The simplest experience I've ever had!
+            </p>
+          </div>
         </div>
+        <div id="clientCard2" class="clientCard">
+          <div class="clientCardText">
+            <p class="clientCardTitle poppins-semibold">"Cooperative Team"</p>
+            <p class="clientCardSubtitle poppins-medium">
+              The Hash Group Team works to resolve all your issues till the end.
+            </p>
+          </div>
+        </div>
+        <div id="clientCard3" class="clientCard">
+          <div class="clientCardText">
+            <p class="clientCardTitle poppins-semibold">
+              "Amazing Timeliness!"
+            </p>
+            <p class="clientCardSubtitle poppins-medium">
+              Their time of delivery is amazing! Extremely Impressed
+            </p>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- //footer -->
 
     <footer>
-        <div class="container">
-            <div class="about">
-                <h2 class="poppins-medium" id="abouthashgroup">About Hash Group</h2>
-                <p class="poppins-regular" id="aboutdescription"><br>Hash Inc. - Your partner in innovation and excellence.<br>We specialize in delivering top-notch Software Development,<br>modern and responsive Web Development, and visually stunning<br>Graphics Designing solutions. At Hash Inc., we are passionate<br>about turning ideas into impactful digital realities. Whether you're<br>seeking custom software, dynamic websites, or creative designs,<br>our expert team is dedicated to exceeding expectations and driving<br>success. Let's create something extraordinary together!</p>
-            </div>
-            <div id="links-container">
-                <div class="quick-links">
-                    <h2 class="poppins-medium" id="quicklinkshead">Quick Links</h2>
-                    <ul id="quicklinkslists" class="poppins-regular">
-                        <li><a class="hyperedLinks quicklinksitem" href="#">Home</a></li>
-    
-                        <li><a class="hyperedLinks quicklinksitem" href="./About.html">About</a></li>
-                        <li><a class="hyperedLinks quicklinksitem" href="./services.html">Services</a></li>
-                        <li><a class="hyperedLinks quicklinksitem" href="./contact.html">Contact</a></li>
-                        <li><a class="hyperedLinks quicklinksitem" href="./pricing.html">Pricing</a></li>
-                    </ul>
-                </div>
-        
-                <div class="contact">
-                    <h2 class="poppins-medium" id="contactinfo">Contact Information</h2><br>
-                    <h3 class="poppins-medium">Email</h3>
-                    <a href="mailto:youremail@example.com" class="poppins-regular hyperedLinks">hashinc@email.com</a>
-                    <h3 class="poppins-medium">Contact</h3>
-                    <p class="poppins-regular">+123-456-789</p>
-                </div>
-            </div>
+      <div class="container">
+        <div class="about">
+          <h2 class="poppins-medium" id="abouthashgroup">About Hash Group</h2>
+          <p class="poppins-regular" id="aboutdescription">
+            <br />Hash Inc. - Your partner in innovation and excellence.<br />We
+            specialize in delivering top-notch Software Development,<br />modern
+            and responsive Web Development, and visually stunning<br />Graphics
+            Designing solutions. At Hash Inc., we are passionate<br />about
+            turning ideas into impactful digital realities. Whether you're<br />seeking
+            custom software, dynamic websites, or creative designs,<br />our
+            expert team is dedicated to exceeding expectations and driving<br />success.
+            Let's create something extraordinary together!
+          </p>
         </div>
-        <div class="copyright poppins-regular">
-            <p>Copyright &copy; 2024 Hash Inc. All rights reserved.</p>
+        <div id="links-container">
+          <div class="quick-links">
+            <h2 class="poppins-medium" id="quicklinkshead">Quick Links</h2>
+            <ul id="quicklinkslists" class="poppins-regular">
+              <li><a class="hyperedLinks quicklinksitem" href="./index.html">Home</a></li>
+
+              <li>
+                <a class="hyperedLinks quicklinksitem" href="./About.html"
+                  >About</a
+                >
+              </li>
+              <li>
+                <a class="hyperedLinks quicklinksitem" href="./services.html"
+                  >Services</a
+                >
+              </li>
+              <li>
+                <a class="hyperedLinks quicklinksitem" href="./contact.html"
+                  >Contact</a
+                >
+              </li>
+              <li>
+                <a class="hyperedLinks quicklinksitem" href="./pricing.html"
+                  >Pricing</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div class="contact">
+            <h2 class="poppins-medium" id="contactinfo">Contact Information</h2>
+            <br />
+            <h3 class="poppins-medium">Email</h3>
+            <a
+              href="mailto:youremail@example.com"
+              class="poppins-regular hyperedLinks"
+              >hashinc@email.com</a
+            >
+            <h3 class="poppins-medium">Contact</h3>
+            <p class="poppins-regular">+123-456-789</p>
+          </div>
         </div>
+      </div>
+      <div class="copyright poppins-regular">
+        <p>Copyright &copy; 2024 Hash Inc. All rights reserved.</p>
+      </div>
     </footer>
-</body>
+    <script src="./homejs/index.js"></script>
+  </body>
 </html>

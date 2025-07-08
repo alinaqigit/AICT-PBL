@@ -337,3 +337,128 @@ footer {
     margin-top: 10px;
     margin-bottom: 5px; 
 }
+
+@media (max-width: 1024px) {
+    #navbar #navLogoDiv, #navbar #navList, #navbar #navSearchDiv {
+        width: auto;
+        padding: 0 4px;
+    }
+    #navbar #navList {
+        width: 50%;
+    }
+    #navbar #navSearchDiv {
+        width: 30%;
+    }
+    #hero .heroDivs {
+        margin: 0 20px;
+    }
+    #hero #heroDiv2 img {
+        height: 250px;
+    }
+    .aboutdiv, .leadership-card-container, .timelineAssets {
+        gap: 20px;
+    }
+    #hashIncHQ {
+        width: 350px;
+    }
+}
+
+@media (max-width: 768px) {
+    #navbar {
+        flex-direction: column;
+        padding: 8px 0;
+    }
+    #navbar #navLogoDiv, #navbar #navList, #navbar #navSearchDiv {
+        width: 100%;
+        justify-content: center;
+        padding: 4px 0;
+    }
+    #navbar #navList {
+        flex-wrap: wrap;
+        font-size: 15px;
+    }
+    #hero {
+        flex-direction: column;
+        padding: 20px 4px 0 4px;
+        margin: 10px 4px 0 4px;
+    }
+    #hero #heroDiv1, #hero #heroDiv2 {
+        max-width: 100%;
+        width: 100%;
+    }
+    #hero #heroDiv2 img {
+        width: 100%;
+        height: auto;
+        max-width: 350px;
+    }
+    .aboutdiv, .leadership-card-container, .timelineAssets {
+        flex-direction: column;
+        align-items: center;
+        gap: 16px;
+    }
+    #hashIncHQ {
+        width: 90vw;
+        margin: 0 auto 16px auto;
+    }
+    #hashIncHQText {
+        margin-right: 0;
+        text-align: center;
+    }
+    .leadership-card {
+        width: 90vw;
+        max-width: 350px;
+        height: auto;
+        margin: 20px auto;
+    }
+    .leadership-card img {
+        width: 100%;
+        height: auto;
+    }
+    .about, .quick-links, .contact {
+        float: none;
+        width: 100%;
+        padding: 0;
+    }
+    .container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+
+@media (max-width: 480px) {
+    #abouttitle .title, #hero #heroDiv1 #heroLogo p {
+        font-size: 2rem;
+    }
+    #aboutus, #timelineheading, #leadershipheading {
+        font-size: 1.2rem;
+        margin: 20px 2px 10px 10px;
+    }
+    #aboutarticle, #leadership-info {
+        font-size: 1rem;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    #servicesSection #offer {
+        font-size: 1.5rem;
+    }
+    #hashIncHQ {
+        width: 100vw;
+        border-radius: 10px;
+    }
+    .leadership-card {
+        min-width: 0;
+        width: 98vw;
+        margin: 10px auto;
+    }
+    .leadership-card img {
+        width: 100%;
+        height: auto;
+    }
+    .timelineAssets img {
+        max-width: 80px;
+        height: auto;
+    }
+    .copyright {
+        font-size: 0.9rem;
+    }
+}

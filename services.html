@@ -13,27 +13,82 @@
     <title>Services - Hash Group</title>
 </head>
 <body>
+        <ul id="HamburgerNavList" class="navItems poppins-regular">
+      <div id="closeButton">X</div>
+      <li id="navLogo" class="navListItems">
+        <img
+          class="navLogo"
+          src="./static/navbar/hashGroupLogoWithout text.png"
+          alt=""
+        />
+        <img
+          class="navLogo"
+          src="./static/navbar/hashIncText.png"
+          alt=""
+        />
+      </li>
+      <li id="navListItem1" class="navListItems">
+        <a class="hyperLinks" href="./index.html"> Home </a>
+      </li>
+      <li id="navListItem2" class="navListItems">
+        <a class="hyperLinks" href="./About.html"> About </a>
+      </li>
+      <li id="navListItem3" class="navListItems">
+        <a class="hyperLinks" href="./services.html"> Services </a>
+      </li>
+      <li id="navListItem4" class="navListItems">
+        <a class="hyperLinks" href="./contact.html"> Contact </a>
+      </li>
+      <li id="navListItem5" class="navListItems">
+        <a class="hyperLinks" href="./pricing.html"> Pricing </a>
+      </li>
+    </ul>
     <nav id="navbar">
-        <a href="./index.html" class="navItems"  id="navLogoDiv">
-            <img id="navLogo1" class="navLogoItems" src="./static/navbar/hashGroupLogoWithout text.png" alt="">
-            <img id="navLogo2" class="navLogoItems" src="./static/navbar/hashIncText.png" alt="">
-        </a>
-        <ul id="navList" class="navItems poppins-regular">
-            <li id="navListItem1" class="navListItems"><a class="hyperLinks" href="./index.html"> Home </a></li>
-            <li id="navListItem2" class="navListItems"><a class="hyperLinks" href="./About.html"> About </a></li>
-            <li id="navListItem3" class="navListItems"><a class="hyperLinks" href="./services.html"> Services </a></li>
-            <li id="navListItem4" class="navListItems"><a class="hyperLinks" href="./contact.html"> Contact </a></li>
-            <li id="navListItem5" class="navListItems"><a class="hyperLinks" href="./pricing.html"> Pricing </a></li>
-        </ul>
-        <div id="navSearchDiv" class="navItems" >
-            <div id="navSearch" class="navSearchItems">
-                <img id="navSearchImg" src="./static/navbar/searchIcon.png" alt="">
-                <input type="text" placeholder="Search">
-            </div>
-            <div id="navSearchimgDiv" class="navSearchItems">
-                <img src="./static/navbar/ProfPicIcon.png" alt="">
-            </div>
+      <div id="Hamburger">
+        <div class="Hamburger-Stripes"></div>
+        <div class="Hamburger-Stripes"></div>
+        <div class="Hamburger-Stripes"></div>
+      </div>
+      <a href="./index.html" class="navItems" id="navLogoDiv">
+        <img
+          id="navLogo1"
+          class="navLogoItems"
+          src="./static/navbar/hashGroupLogoWithout text.png"
+          alt=""
+        />
+        <img
+          id="navLogo2"
+          class="navLogoItems"
+          src="./static/navbar/hashIncText.png"
+          alt=""
+        />
+      </a>
+      <ul id="navList" class="navItems poppins-regular">
+        <li id="navListItem1" class="navListItems">
+          <a class="hyperLinks" href="./index.html"> Home </a>
+        </li>
+        <li id="navListItem2" class="navListItems">
+          <a class="hyperLinks" href="./About.html"> About </a>
+        </li>
+        <li id="navListItem3" class="navListItems">
+          <a class="hyperLinks" href="./services.html"> Services </a>
+        </li>
+        <li id="navListItem4" class="navListItems">
+          <a class="hyperLinks" href="./contact.html"> Contact </a>
+        </li>
+        <li id="navListItem5" class="navListItems">
+          <a class="hyperLinks" href="./pricing.html"> Pricing </a>
+        </li>
+      </ul>
+      <div id="navSearchDiv" class="navItems">
+        <div id="navSearch" class="navSearchItems">
+          <img id="navSearchImg" src="./static//navbar/searchIcon.png" alt="" />
+          <input type="text" placeholder="Search" />
         </div>
+        <div id="navSearchimgDiv" class="navSearchItems">
+          <img src="./static/navbar/ProfPicIcon.png" alt="" />
+        </div>
+      </div>
     </nav>
     <section>
         <div id="servicestitle">
@@ -184,5 +239,6 @@
         <p>Copyright &copy; 2024 Hash Inc. All rights reserved.</p>
     </div>
 </footer>
+<script src="./homeJs/index.js"></script>
 </body>
 </html>

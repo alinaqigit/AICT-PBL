@@ -1,4 +1,3 @@
-
 /* About Page CSS*/
 
 .video-container video {
@@ -133,4 +132,32 @@
     width: 400px;
     border-radius: 30px;
     margin-right: 35px;
+}
+
+@media (max-width: 900px) {
+    .package-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 16px;
+    }
+    #hassanNaseer, .leadership-card {
+        width: 90vw;
+        max-width: 350px;
+        height: auto;
+    }
+}
+
+@media (max-width: 480px) {
+    #pricingtitle .title, .sectiontitle {
+        font-size: 1.5rem;
+    }
+    .devarticle, .devlist, .devlink {
+        font-size: 1rem;
+        margin-left: 10px;
+    }
+    #hassanNaseer, .leadership-card {
+        width: 98vw;
+        max-width: 98vw;
+        height: auto;
+    }
 }

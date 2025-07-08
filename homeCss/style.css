@@ -3,6 +3,14 @@
     padding: 0px;
 }
 
+.cards-container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 3px;
+  flex-wrap: wrap;
+}
+
 .hyperLinks{
     color: black;
     text-decoration: none;
@@ -10,6 +18,52 @@
 
 input:focus{
     outline: none;
+}
+
+#HamburgerNavList{
+    position: static;
+    display: none;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    background-color: #F2F2F2;
+    padding: 10px 50px;
+    z-index: 21;
+    height: 500px;
+}
+
+#HamburgerNavList #closeButton{
+    cursor: pointer;
+    position: absolute;
+    top: 10px;
+    left: 20px;
+    font-size: 30px;
+    color: #2B91A7;
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    text-align: center;
+    
+}
+
+#HamburgerNavList #navLogo{
+    height: 50px;
+    display: flex;
+}
+
+#HamburgerNavList #navLogo img{
+    max-width: 100%;
+    max-height: 100%;
+}
+
+#HamburgerNavList .navListItems a{
+    font-size: x-large;
+    color: #2B91A7;
+    font-weight: bold;
 }
 
 #navbar{
@@ -23,6 +77,22 @@ input:focus{
     padding: 13px 0px;
     width: 100%;
     border:1.5px solid  rgba(0, 0, 0, .2);
+}
+
+#navbar #Hamburger {
+    display: none;
+    max-width: 40px;
+    min-width: 30px;
+    margin: 0px 30px;
+    padding: 0%;
+}
+
+#navbar #Hamburger .Hamburger-Stripes {
+    height: 3px;
+    border-radius: 3px;
+    width: 100%;
+    background-color: #35a7c1;
+    z-index: inherit;
 }
 
 #navbar #navLogoDiv{
@@ -43,7 +113,7 @@ input:focus{
     height: 15px;
 
 }
-#navbar #navList{
+#navbar #navList {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -51,12 +121,12 @@ input:focus{
     width: 65%;
 }
 
-#navbar #navList .navListItems{
+#navbar #navList .navListItems, #HamburgerNavList .navListItems{
     list-style: none;
     margin: 0px 5px;
 }
 
-#navbar #navList a{
+#navbar #navList a, #HamburgerNavList a{
     list-style: none;
     padding: 5px 8px;
 }
@@ -171,9 +241,7 @@ input:focus{
 
 #servicesSection #servicesCardsSection{
     margin-left: 40px;
-    display: flex;
-    justify-content: left;
-    align-items: center;
+    
 }
 
 #servicesSection #servicesCardsSection .servicesCard {
@@ -371,4 +439,114 @@ footer {
 .copyright{
     margin: 5px 5px;
     text-align: center;
+}
+
+@media (max-width: 1024px) {
+    #navbar #navLogoDiv, #navbar #navList, #navbar #navSearchDiv {
+        width: auto;
+        padding: 0 4px;
+    }
+    #navbar #navList {
+        width: 50%;
+    }
+    #navbar #navSearchDiv {
+        width: 30%;
+    }
+    #hero .heroDivs {
+        margin: 0 20px;
+    }
+    #hero #heroDiv2 img {
+        height: 250px;
+    }
+    #servicesSection #servicesCardsSection {
+        margin-left: 0;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 768px) {
+    #HamburgerNavList {
+        display: none;
+        width: 50%;
+    }
+    #navbar {
+        padding: 8px 0;
+    }
+    #navbar #Hamburger{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 20px;
+    }
+    #navbar #navLogoDiv, #navbar #navList, #navbar #navSearchDiv {
+        width: 100%;
+        justify-content: center;
+        padding: 4px 0;
+    }
+    #navbar #navList {
+        display: none;
+        font-size: 15px;
+    }
+    #hero {
+        flex-direction: column;
+        padding: 20px 4px 0 4px;
+        margin: 10px 4px 0 4px;
+    }
+    #hero #heroDiv1, #hero #heroDiv2 {
+        max-width: 100%;
+        width: 100%;
+    }
+    #hero #heroDiv2 img {
+        width: 100%;
+        height: auto;
+        max-width: 350px;
+    }
+    #servicesSection #servicesCardsSection {
+        flex-direction: column;
+        align-items: center;
+        margin-left: 0;
+    }
+    #servicesSection #servicesCardsSection .servicesCard {
+        width: 90vw;
+        max-width: 350px;
+        margin: 16px 0;
+    }
+    .container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .about, .quick-links, .contact {
+        width: 100%;
+        padding: 0;
+        float: none;
+    }
+    #links-container {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    #hero #heroDiv1 #heroLogo p, #servicesSection #offer {
+        font-size: 2rem;
+    }
+    #hero #heroDiv1 #heroArticle, #servicesSection #servicesCardsSection .servicesCard .servicesCardText .serviceCardSubtitle {
+        font-size: 1rem;
+    }
+    #hero #heroDiv1 button {
+        font-size: 1rem;
+        padding: 10px 18px;
+    }
+    #hero #heroDiv2 img {
+        max-width: 95vw;
+        height: auto;
+    }
+    #servicesSection #servicesCardsSection .servicesCard {
+        min-width: 0;
+        width: 98vw;
+        margin: 10px auto;
+    }
+    .copyright {
+        font-size: 0.9rem;
+    }
 }
