@@ -21,7 +21,7 @@ input:focus{
 }
 
 #HamburgerNavList{
-    position: static;
+    position: absolute;
     display: none;
     flex-direction: column;
     justify-content: space-evenly;
@@ -67,6 +67,7 @@ input:focus{
 }
 
 #navbar{
+
     position: sticky;
     top: 0px;
     z-index: 20;
@@ -75,7 +76,7 @@ input:focus{
     align-items: center;
     background-color: #F2F2F2;
     padding: 13px 0px;
-    width: 100%;
+    width: 99.5vw;
     border:1.5px solid  rgba(0, 0, 0, .2);
 }
 
@@ -191,6 +192,7 @@ input:focus{
     display: flex;
     justify-content: left;
     align-items: center;
+    height: 100px;
 }
 
 #hero #heroDiv1 #heroLogo p{
@@ -198,7 +200,7 @@ input:focus{
     color: #2B91A7;
 }
 #hero #heroDiv1 #heroLogo img{
-    height: 100px;
+    max-height: 100%;
 }
 
 #hero #heroDiv1 #heroArticle{
@@ -444,7 +446,7 @@ footer {
 @media (max-width: 1024px) {
     #navbar #navLogoDiv, #navbar #navList, #navbar #navSearchDiv {
         width: auto;
-        padding: 0 4px;
+        padding: 0px 4px;
     }
     #navbar #navList {
         width: 50%;
@@ -453,7 +455,7 @@ footer {
         width: 30%;
     }
     #hero .heroDivs {
-        margin: 0 20px;
+        margin: 0px 20px;
     }
     #hero #heroDiv2 img {
         height: 250px;
@@ -471,7 +473,7 @@ footer {
         width: 50%;
     }
     #navbar {
-        padding: 8px 0;
+        padding: 8px 0px;
     }
     #navbar #Hamburger{
         display: flex;
@@ -498,9 +500,7 @@ footer {
         width: 100%;
     }
     #hero #heroDiv2 img {
-        width: 100%;
-        height: auto;
-        max-width: 350px;
+        display: none;
     }
     #servicesSection #servicesCardsSection {
         flex-direction: column;
@@ -526,7 +526,29 @@ footer {
     }
 }
 
+@media (max-width: 530px) {
+    #navbar #navLogoDiv {
+        display: none;
+    }
+}
+
 @media (max-width: 480px) {
+    #navbar #navSearchDiv {
+        justify-content: center;
+    }
+    #navbar #Hamburger {
+        margin: 0px 10px;
+    }
+    #hero {
+        flex-direction: column;
+        padding: 10px 2vw 0 2vw;
+        margin: 5px 2vw 0 2vw;
+    }
+    #hero #heroDiv1, #hero #heroDiv2 {
+        max-width: 100%;
+        width: 100%;
+        margin: 0;
+    }
     #hero #heroDiv1 #heroLogo p, #servicesSection #offer {
         font-size: 2rem;
     }
@@ -540,13 +562,130 @@ footer {
     #hero #heroDiv2 img {
         max-width: 95vw;
         height: auto;
+        display: block;
+        margin: 0 auto;
     }
     #servicesSection #servicesCardsSection .servicesCard {
         min-width: 0;
-        width: 98vw;
         margin: 10px auto;
+    }
+    #servicesSection .servicesCard, #clientsSection .clientCard, #why-choose-us .card {
+        max-width: 90vw;
     }
     .copyright {
         font-size: 0.9rem;
+    }
+}
+
+/* Improved fix for screens <= 420px */
+@media (max-width: 420px) {
+    #navbar #navSearchDiv {
+        width: 60%;
+        padding: 0 2px;
+    }
+    #navbar #navLogoDiv {
+        display: none;
+    }
+    #navbar #Hamburger {
+        max-width: 28px;
+        min-width: 22px;
+        margin: 0 2px;
+    }
+    #servicesSection #servicesCardsSection .servicesCard,
+    #clientsSection .clientCard {
+        width: 90vw;
+        max-width: 220px;
+        min-width: 0;
+        height: 200px;
+        padding: 8px;
+        border-radius: 24px;
+    }
+    #navbar {
+        padding: 6px 0px;
+        width: 100%;
+        /* Remove flex-direction: column and width: 100vw to prevent layout break */
+    }
+    #navbar #navLogoDiv,
+    #navbar #navList,
+    #navbar #navSearchDiv {
+        width: 100%;
+        padding: 2px 0;
+        justify-content: center;
+    }
+    #navbar #navList {
+        display: none;
+    }
+    #navbar #Hamburger {
+        margin: 0px 6px;
+    }
+    #hero {
+        padding: 6px 1vw 0 1vw;
+        margin: 3px 1vw 0 1vw;
+    }
+    #hero #heroDiv1 #heroLogo p,
+    #servicesSection #offer {
+        font-size: 1.3rem;
+    }
+    #hero #heroDiv1 #heroArticle,
+    #servicesSection #servicesCardsSection .servicesCard .servicesCardText .serviceCardSubtitle {
+        font-size: 0.95rem;
+    }
+    #hero #heroDiv1 button {
+        font-size: 0.95rem;
+        padding: 8px 12px;
+    }
+    #servicesSection #servicesCardsSection .servicesCard {
+        width: 100%;
+        max-width: 100%;
+        margin: 8px auto;
+        padding: 10px;
+        box-sizing: border-box;
+    }
+    .container,
+    .about,
+    .quick-links,
+    .contact,
+    #links-container {
+        width: 100%;
+        padding: 0;
+        float: none;
+    }
+    .copyright {
+        font-size: 0.8rem;
+    }
+    html, body {
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+}
+
+@media (max-width: 390px) {
+    #ourProjects .projectCard::before {
+        border-radius: 0px;
+    }
+}
+
+@media (max-width: 300px) {
+    #navbar #navSearchDiv {
+        justify-content: end;
+        padding: 0px 20px;
+    }
+
+    #navbar #navSearchDiv #navSearch{
+        display: none;
+    }
+
+    #navbar #navSearchDiv #navSearch {
+        display: none;
+    }
+
+    #navbar #navLogoDiv {
+        display: flex;
+    }
+}
+
+@media (max-width: 220px) {
+    #navbar #navLogoDiv .navLogoItems {
+        margin-left: 2px;
     }
 }

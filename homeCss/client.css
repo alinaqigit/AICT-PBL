@@ -65,7 +65,7 @@
 }
 
 #client #clientCardsSection #clientCard1 {
-    width: 280px;
+    max-width: 280px;
 }
 
 
