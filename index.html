@@ -23,16 +23,14 @@
   </head>
   <body>
     <nav id="navbar">
-      <ul id="HamburgerNavList" class="navItems poppins-regular">
-        <div id="closeButton">X</div>
-        <li id="navLogo" class="navListItems">
+      <ul id="HamburgerNavList" class="navItems poppins-regular hidden">
+        <div id="closeButton">
           <img
-            class="navLogo"
-            src="./static/navbar/hashGroupLogoWithout text.png"
-            alt=""
+            id="closeButtonImg"
+            src="./static/navbar/closeIcon.png"
+            alt="Close Button"
           />
-          <img class="navLogo" src="./static/navbar/hashIncText.png" alt="" />
-        </li>
+        </div>
         <li id="navListItem1" class="navListItems">
           <a class="hyperLinks" href="#"> Home </a>
         </li>
@@ -106,13 +104,14 @@
         <div id="heroArticle" class="heroDiv1Childeren">
           <article class="poppins-regular">
             Leading experts in web development, software development, software
-            creation and grapyics designing. We'r not just developers; we'r
+            creation and grapyics designing. We're not just developers; we're
             digital architechts
           </article>
         </div>
         <button
           id="heroSectionButton"
           class="poppins-regular heroDiv1Childeren"
+          onclick="location.href='./pricing.html'"
         >
           Get Started
         </button>
@@ -337,13 +336,13 @@
         <div class="about">
           <h2 class="poppins-medium" id="abouthashgroup">About Hash Group</h2>
           <p class="poppins-regular" id="aboutdescription">
-            <br />Hash Inc. - Your partner in innovation and excellence.<br />We
-            specialize in delivering top-notch Software Development,<br />modern
-            and responsive Web Development, and visually stunning<br />Graphics
-            Designing solutions. At Hash Inc., we are passionate<br />about
-            turning ideas into impactful digital realities. Whether you're<br />seeking
-            custom software, dynamic websites, or creative designs,<br />our
-            expert team is dedicated to exceeding expectations and driving<br />success.
+            <br>Hash Inc. - Your partner in innovation and excellence. We
+            specialize in delivering top-notch Software Development, modern
+            and responsive Web Development, and visually stunning Graphics
+            Designing solutions. At Hash Inc., we are passionate about
+            turning ideas into impactful digital realities. Whether you're seeking
+            custom software, dynamic websites, or creative designs, our
+            expert team is dedicated to exceeding expectations and driving success.
             Let's create something extraordinary together!
           </p>
         </div>

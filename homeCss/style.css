@@ -20,34 +20,63 @@ input:focus{
     outline: none;
 }
 
-#HamburgerNavList{
-    position: absolute;
+/* #HamburgerNavList{
+    position:absolute;
     display: none;
     flex-direction: column;
-    justify-content: space-evenly;
-    align-items: flex-start;
-    position: absolute;
-    top: 0px;
-    left: 0px;
+    justify-content:space-around;
+    align-items:flex-start;
+    top:60px;
+    left: 20px;
     width: 100%;
-    background-color: #F2F2F2;
+    background-color: rgb(242, 242, 242);
     padding: 10px 50px;
     z-index: 21;
     height: 500px;
+    border-radius: 20px;
+} */
+
+#HamburgerNavList {
+    position: absolute;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+    top: 60px;
+    left: 20px;
+    width: 100%;
+    max-width: max-content;
+    background-color: rgb(242, 242, 242);
+    padding: 20px 40px;
+    z-index: 21;
+    border-radius: 25px;
+
+    /* NEW STUFF BELOW */
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease-in-out, opacity 0.3s ease-in-out;
 }
+
 
 #HamburgerNavList #closeButton{
     cursor: pointer;
-    position: absolute;
+    position: right;
     top: 10px;
-    left: 20px;
-    font-size: 30px;
-    color: #2B91A7;
-    width: 40px;
-    height: 40px;
+    right: 20px;
+    font-size: 10px;
+    width: 10px;
+    height: 10px;
+    margin-left: auto;
     border-radius: 100%;
-    text-align: center;
+    flex-direction: row;
+    align-items: flex-end;
     
+}
+#HamburgerNavList #closeButton img{
+    width: 30px;
+    height: 30px;
+    right: 100px;
+    align-items: flex-end;
 }
 
 #HamburgerNavList #navLogo{
@@ -62,8 +91,7 @@ input:focus{
 
 #HamburgerNavList .navListItems a{
     font-size: x-large;
-    color: #2B91A7;
-    font-weight: bold;
+    color: #000000;
 }
 
 #navbar{
@@ -74,10 +102,10 @@ input:focus{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #F2F2F2;
-    padding: 13px 0px;
+    background-color: rgba(242, 242, 242, 0.8);
+    backdrop-filter: blur(30px);
+    padding: 10px 0px;
     width: 99.5vw;
-    border:1.5px solid  rgba(0, 0, 0, .2);
 }
 
 #navbar #Hamburger {
@@ -124,7 +152,7 @@ input:focus{
 
 #navbar #navList .navListItems, #HamburgerNavList .navListItems{
     list-style: none;
-    margin: 0px 5px;
+    margin: 0px 10px;
 }
 
 #navbar #navList a, #HamburgerNavList a{
@@ -160,6 +188,30 @@ input:focus{
     height: 20px;
     border-right: 1px solid #2B91A7;
 }
+
+/* Add this at the END of your current CSS */
+
+#HamburgerNavList {
+    transition: max-height 0.4s ease-in-out, opacity 0.3s ease-in-out;
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+}
+
+/* Show menu with animation */
+#HamburgerNavList.open {
+    max-height: 500px; /* Same as original height */
+    opacity: 1;
+}
+
+/* Fully hide it again */
+#HamburgerNavList.hidden {
+  /* No display:none! Let JS control display for animation timing */
+  max-height: 0 !important;
+  opacity: 0 !important;
+  overflow: hidden;
+}
+
 
 
 /* hero section */
@@ -213,6 +265,7 @@ input:focus{
     font-size: 23px;
     color: white;
     background-color: #2B91A7;
+    cursor: pointer;
     border: none;
     transition: background-color .13s, box-shadow .13s;
 }
@@ -395,53 +448,85 @@ input:focus{
 footer {
     color: #808080;
     background-color: #f2f2f2;
-    padding: 20px 0;
-
+    padding: 40px 20px 20px;
+    font-family: 'Segoe UI', sans-serif;
 }
 
 .container {
-    overflow: auto;
+    max-width: 1200px;
+    margin: 0 auto;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
+    gap: 40px;
 }
 
-.about{
-    width: 43%; /* Adjust for equal width */
-    padding: 0 20px;
+/* Sections */
+.about,
+.quick-links,
+.contact {
+    flex: 1 1 300px;
+    min-width: 280px;
 }
 
-#links-container{
-    width: 400px;
+.about p {
+    line-height: 1.6;
+    font-size: 15px;
 }
 
-.quick-links{
-    width: 37%;
-}
-
-
+/* Quick Links */
 .quick-links ul {
-    list-style: none; 
+    list-style: none;
+    padding: 0;
+    margin: 0;
 }
 
 .quick-links ul li {
-    margin-top: 10px;
-    margin-bottom: 5px; 
+    margin: 10px 0;
 }
 
-.contact{
-    float: left;
+#links-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 40px;
+    width: 100%;
 }
 
-.hyperedLinks{
+.quick-links,
+.contact {
+    flex: 1 1 45%;
+    min-width: 250px;
+    padding: 0 10px;
+}
+
+
+.hyperedLinks {
     text-decoration: none;
     color: #808080;
+    transition: color 0.3s ease;
 }
 
-.copyright{
-    margin: 5px 5px;
-    text-align: center;
+.hyperedLinks:hover {
+    color: #000;
 }
+
+/* Contact Info */
+.contact p {
+    margin: 8px 0;
+    line-height: 1.5;
+}
+
+/* Copyright */
+.copyright {
+    margin-top: 40px;
+    padding-top: 20px;
+    text-align: center;
+    font-size: 14px;
+    border-top: 1px solid #ddd;
+}
+
 
 @media (max-width: 1024px) {
     #navbar #navLogoDiv, #navbar #navList, #navbar #navSearchDiv {
